@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
 <head>
 	<title>jQuery- Animate</title>
@@ -13,8 +13,17 @@
 			});
 
 			$("#button2").click(function() {
-				//put your animation code here
+				$("#ex2").css({opacity: '1', background: 'blue'});
+				$("#ex2").animate({left: '+=200px', opacity: '-=0.125'},"fast");
+				$("#ex2").animate({top: '-=200px', opacity: '-=0.125'},"slow");
+				$("#ex2").animate({left: '-=200px', opacity: '-=0.125'},"fast");
+				$("#ex2").animate({top: '+=200px', opacity: '-=0.125'},"slow");
+				$("#ex2").animate({left: '+=200px', opacity: '-=0.125'},"fast");
+				$("#ex2").animate({top: '+=200px', opacity: '-=0.125'},"slow");
+				$("#ex2").animate({left: '-=200px', opacity: '-=0.125'},"");
+				$("#ex2").animate({top: '-=200px', opacity: '-=0.125'},"slow");
 			});
+			
 		});
 	</script>
 
